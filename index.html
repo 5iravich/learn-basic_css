@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Responsive</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Prompt, sans-serif;
+        }
+        .row img{
+            border-radius: 20px;
+        }
+        /* .row img:hover{
+        
+        } */
+
+        header{
+            background-color: teal;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        header h2{
+            color: aliceblue;
+        }
+        .img-center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        nav{
+            overflow: hidden;
+            background-color: rgba(0, 163, 163, 0.50);
+            border-radius: 10px;
+        }
+        nav a{
+            float: left;
+            display: block;
+            color: azure;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+        nav a:hover{
+            background-color: aliceblue;
+            color: teal;
+        }
+
+        .row h2{
+            text-align: center;
+        }
+
+        .colA,.colB,.colC{
+            float: left;
+            width: 30%;
+            padding: 15px;
+            text-align: justify;
+            background-color: rgb(206, 255, 234);
+            border-radius: 50px;
+            margin: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            .colA,.colB,.colC{
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .colA,.colB,.colC{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Guardians of the Galaxy</h2>
+    </header>
+    <nav>
+        <a href="#">Main</a>
+        <a href="#">Edit</a>
+        <a href="#">View</a>
+    </nav>
+    <div class="row">
+        <div class="colA">
+            <h2>Star-Lord</h2>
+            <img src="https://cdn.marvel.com/content/1x/021slq_ons_crd_03.jpg" alt="Star-Lord" width="50%"class="img-center"/>
+            <p class="center">
+                Leader of the Guardians of the Galaxy, Peter Quill, known as Star-Lord, 
+                brings a sassy sense of humor while protecting the universe from any and all threats.
+            </p>
+        </div>
+        <div class="colB">
+            <h2>Gamora</h2>
+            <img src="https://cdn.marvel.com/content/1x/022gam_ons_crd_02.jpg" alt="Gamora" width="50%" class="img-center"/>
+            <p class="center">
+                Raised by Thanos to be a living weapon, Gamora seeks redemption as a member of the Guardians of the Galaxy, 
+                putting her extraordinary fighting abilities to good use.
+            </p>
+        </div>
+        <div class="colC">
+            <h2>Drax</h2>
+            <img src="https://cdn.marvel.com/content/1x/025drx_ons_crd_03.jpg" alt="Drax" width="50%" class="img-center"/>
+            <p class="center">
+                Drax uses his super strength and combat skills to destroy any enemies of the galaxy.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
